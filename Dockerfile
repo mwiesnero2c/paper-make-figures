@@ -13,7 +13,7 @@ RUN apt-get update && \
     strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5 && \
     rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
-    apt install -y libopenblas-base libsuperlu-dev && \
+    apt install -y wget libopenblas-base libsuperlu-dev && \
     wget -q -O worhp_1.14-0~ubuntu2004.deb https://seafile.zfn.uni-bremen.de/f/0171f8b47c114aa282a5/?dl=1 && \
     chmod +x worhp_1.14-0~ubuntu2004.deb && apt-get install -y ./worhp_1.14-0~ubuntu2004.deb
 RUN pip3 install conan
