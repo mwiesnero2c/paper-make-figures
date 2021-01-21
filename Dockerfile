@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get install -y inkscape make cmake python3 python3-pip git g++ libboost-all-dev && \
     rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
-    apt-get install -y texlive texlive-latex-extra dvipng
+    apt-get install -y texlive texlive-latex-extra dvipng cm-super
 RUN apt-get update && \
     apt-get install -y qt5-qmake qt5-default libqt5charts5-dev && \
     apt-get clean && \
